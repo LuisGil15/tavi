@@ -2,7 +2,7 @@
 
 Private distribution repository for signed Tavi macOS release artifacts. This
 repository contains release binaries and checksums only; application source is
-maintained separately in `LuisGil15/Tavi`.
+maintained separately in `LuisGil15/tavi-source`.
 
 ## Release assets
 
@@ -22,7 +22,7 @@ then publish the generated files from its `dist/` directory:
 
 ```sh
 gh release create "v<VERSION>" dist/Tavi-<VERSION>.dmg dist/Tavi-<VERSION>.zip dist/Tavi-<VERSION>.sha256 \
-  --repo LuisGil15/Tavi-Releases \
+  --repo LuisGil15/tavi \
   --title "Tavi <VERSION>" \
   --notes-file <RELEASE_NOTES_FILE>
 ```
