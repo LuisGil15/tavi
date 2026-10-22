@@ -20,11 +20,13 @@
   <a href="https://buymeacoffee.com/luisgil"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Support Tavi on Buy Me a Coffee"></a>
 </p>
 
-<p align="center">
-  <a href="https://apps.apple.com/mx/app/tavi/id6819794965"><img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180"></a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/Download_Tavi_Direct_for_macOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Download Tavi Direct for macOS"></a>
-</p>
+<table align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center"><a href="https://apps.apple.com/mx/app/tavi/id6819794965"><img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180" height="60"></a></td>
+    <td width="20">&nbsp;</td>
+    <td align="center"><a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="assets/download-tavi-direct.svg" alt="Download Tavi Direct for macOS" width="180" height="60"></a></td>
+  </tr>
+</table>
 
 Tavi is a native, local-first REST client for Mac and iPad. Organize APIs into workspaces and folders, send requests, and keep your environments and response history close at hand.
 
