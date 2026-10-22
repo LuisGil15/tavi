@@ -1,61 +1,58 @@
-# Tavi
+<h1 align="center">
+  <img src="assets/app-icon.png" alt="Tavi app icon" width="150">
+  <br>
+  Tavi
+</h1>
 
 <p align="center">
-  A native, local-first REST client for macOS and iPad. Organize APIs, send requests, and keep your workspaces in your control.
+  An API client. Your APIs. Your workspace.
 </p>
 
 <p align="center">
-  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/Tavi%20Direct-1.0.2-0A84FF?style=flat-square" alt="Tavi Direct version 1.0.2"></a>
+  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/version-1.0.2-0A84FF?style=flat-square" alt="Latest direct version 1.0.2"></a>
   <img src="https://img.shields.io/badge/macOS-15%2B-black?style=flat-square&logo=apple" alt="macOS 15 or later">
   <img src="https://img.shields.io/badge/Developer%20ID-signed-34C759?style=flat-square" alt="Signed with Developer ID">
   <img src="https://img.shields.io/badge/Apple-notarized-34C759?style=flat-square" alt="Notarized by Apple">
 </p>
 
 <p align="center">
-  <a href="https://apps.apple.com/mx/app/tavi/id6819794965">
-    <img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180">
-  </a>
+  <a href="https://ko-fi.com/luisgildev"><img src="https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white" alt="Support Tavi on Ko-fi"></a>
+  <a href="https://buymeacoffee.com/luisgil"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Support Tavi on Buy Me a Coffee"></a>
 </p>
 
-Tavi keeps API work in a native workspace: requests, environments, variables, and response history—without requiring an account.
+<p align="center">
+  <a href="https://apps.apple.com/mx/app/tavi/id6819794965"><img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/Download_Tavi_Direct_for_macOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Download Tavi Direct for macOS"></a>
+</p>
+
+Tavi is a native, local-first REST client for Mac and iPad. Organize APIs into workspaces and folders, send requests, and keep your environments and response history close at hand.
 
 ## What you can do
 
-- Organize requests into workspaces and folders.
-- Send HTTP requests with query parameters, headers, authentication, and JSON or raw bodies.
-- Reuse global and environment variables; store secret values in Apple Keychain.
-- Review request history and capture values from JSON responses.
-- Import from Tavi, Insomnia, OpenAPI, and Swagger; export selected workspaces.
-- Keep data local, or enable private iCloud sync when you choose.
+- Build requests with HTTP methods, query parameters, headers, authentication, and JSON or raw bodies.
+- Organize APIs into workspaces and folders, then reuse global and environment-specific variables.
+- Keep secrets in Apple Keychain and request history on your device.
+- Capture values from JSON responses to use in later requests.
+- Import Tavi, Insomnia, OpenAPI, and Swagger collections; export selected workspaces.
+- Keep workspaces local or enable optional private iCloud sync.
 
-## Choose your Tavi
+## Install
 
 ### App Store
 
-Use the App Store version on Mac and iPad. Updates are delivered through the App Store.
+Get Tavi for Mac and iPad from the [App Store](https://apps.apple.com/mx/app/tavi/id6819794965). App Store updates arrive through Apple.
 
-### Tavi Direct for macOS
+### Homebrew (macOS)
 
-The direct Mac edition is distributed from this repository. It is signed and notarized by Apple.
-
-**Requirements:** macOS 15 or later.
-
-1. Download [Tavi Direct 1.0.2 for macOS](https://github.com/LuisGil15/tavi/releases/download/v1.0.2/Tavi-1.0.2.dmg).
-2. Open the disk image and drag **Tavi** to **Applications**.
-3. Launch Tavi from Applications.
-
-You should not need to disable Gatekeeper or remove the quarantine attribute. The 1.0.2 release adds in-app updates for future direct releases. If you are still on 1.0.1, install 1.0.2 manually once.
-
-### Homebrew
-
-Homebrew installs the same direct macOS edition. The tap is private, so access must be granted before using these commands:
+The Homebrew cask installs **Tavi Direct**, the signed and notarized macOS edition. The tap is private, so access must be granted before installation.
 
 ```sh
 brew tap LuisGil15/tavi
 brew install --cask tavi
 ```
 
-To update later:
+Update later with:
 
 ```sh
 brew update
@@ -63,6 +60,20 @@ brew upgrade --cask tavi
 ```
 
 The cask is maintained in [LuisGil15/homebrew-tavi](https://github.com/LuisGil15/homebrew-tavi).
+
+### Manual installation (macOS)
+
+**Requirements:** macOS 15 or later.
+
+1. Download [Tavi Direct 1.0.2](https://github.com/LuisGil15/tavi/releases/download/v1.0.2/Tavi-1.0.2.dmg).
+2. Open the disk image and drag **Tavi** to **Applications**.
+3. Launch Tavi from Applications.
+
+Tavi Direct is signed with Developer ID and notarized by Apple. You should not need to disable Gatekeeper or remove the quarantine attribute.
+
+## Updates and integrity
+
+The [latest release](https://github.com/LuisGil15/tavi/releases/latest) contains the current signed macOS build and its release files. Tavi Direct 1.0.2 adds in-app updates for future direct releases; users upgrading from 1.0.1 need to install 1.0.2 manually once. The App Store version updates separately through Apple.
 
 ## Privacy
 
@@ -74,6 +85,14 @@ Tavi does not require an account. Workspace data stays on your device unless you
 - [App Store](https://apps.apple.com/mx/app/tavi/id6819794965)
 - [Source code](https://github.com/LuisGil15/tavi-source)
 - [Homebrew cask](https://github.com/LuisGil15/homebrew-tavi)
+- [Report an issue](https://github.com/LuisGil15/tavi/issues)
+
+<details>
+<summary>Release maintenance</summary>
+
+Publish signed, notarized macOS artifacts as GitHub Releases in this repository. Keep the versioned DMG, ZIP, checksum, and appcast feed consistent with the Homebrew cask and direct-update feed. Do not upload source archives or project files here.
+
+</details>
 
 ---
 
