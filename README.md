@@ -1,30 +1,99 @@
-# Tavi Releases
+<h1 align="center">
+  <img src="assets/app-icon.png" alt="Tavi app icon" width="150">
+  <br>
+  Tavi
+</h1>
 
-Private distribution repository for signed Tavi macOS release artifacts. This
-repository contains release binaries and checksums only; application source is
-maintained separately in `LuisGil15/tavi-source`.
+<p align="center">
+  An API client. Your APIs. Your workspace.
+</p>
 
-## Release assets
+<p align="center">
+  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/version-1.0.2-0A84FF?style=flat-square" alt="Latest direct version 1.0.2"></a>
+  <img src="https://img.shields.io/badge/macOS-15%2B-black?style=flat-square&logo=apple" alt="macOS 15 or later">
+  <img src="https://img.shields.io/badge/Developer%20ID-signed-34C759?style=flat-square" alt="Signed with Developer ID">
+  <img src="https://img.shields.io/badge/Apple-notarized-34C759?style=flat-square" alt="Notarized by Apple">
+</p>
 
-Each version is published as a GitHub Release tagged `v<version>` with:
+<p align="center">
+  <a href="https://ko-fi.com/luisgildev"><img src="https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=flat-square&logo=ko-fi&logoColor=white" alt="Support Tavi on Ko-fi"></a>
+  <a href="https://buymeacoffee.com/luisgil"><img src="https://img.shields.io/badge/Buy_Me_a_Coffee-Support-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Support Tavi on Buy Me a Coffee"></a>
+</p>
 
-- `Tavi-<version>.dmg` for drag-and-drop installation;
-- `Tavi-<version>.zip` for managed deployment;
-- `Tavi-<version>.sha256` for integrity verification.
+<p align="center">
+  <a href="https://apps.apple.com/mx/app/tavi/id6819794965"><img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180"></a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/Download_Tavi_Direct_for_macOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Download Tavi Direct for macOS"></a>
+</p>
 
-The Homebrew cask in `LuisGil15/homebrew-tavi` downloads the versioned DMG from
-this repository. Keep release tags and asset names consistent with that cask.
+Tavi is a native, local-first REST client for Mac and iPad. Organize APIs into workspaces and folders, send requests, and keep your environments and response history close at hand.
 
-## Publishing
+## What you can do
 
-Build and sign artifacts from the source checkout with `scripts/release-macos.sh`,
-then publish the generated files from its `dist/` directory:
+- Build requests with HTTP methods, query parameters, headers, authentication, and JSON or raw bodies.
+- Organize APIs into workspaces and folders, then reuse global and environment-specific variables.
+- Keep secrets in Apple Keychain and request history on your device.
+- Capture values from JSON responses to use in later requests.
+- Import Tavi, Insomnia, OpenAPI, and Swagger collections; export selected workspaces.
+- Keep workspaces local or enable optional private iCloud sync.
+
+## Install
+
+### App Store
+
+Get Tavi for Mac and iPad from the [App Store](https://apps.apple.com/mx/app/tavi/id6819794965). App Store updates arrive through Apple.
+
+### Homebrew (macOS)
+
+The Homebrew cask installs **Tavi Direct**, the signed and notarized macOS edition. The tap is private, so access must be granted before installation.
 
 ```sh
-gh release create "v<VERSION>" dist/Tavi-<VERSION>.dmg dist/Tavi-<VERSION>.zip dist/Tavi-<VERSION>.sha256 \
-  --repo LuisGil15/tavi \
-  --title "Tavi <VERSION>" \
-  --notes-file <RELEASE_NOTES_FILE>
+brew tap LuisGil15/tavi
+brew install --cask tavi
 ```
 
-Do not upload source archives or project files to this repository.
+Update later with:
+
+```sh
+brew update
+brew upgrade --cask tavi
+```
+
+The cask is maintained in [LuisGil15/homebrew-tavi](https://github.com/LuisGil15/homebrew-tavi).
+
+### Manual installation (macOS)
+
+**Requirements:** macOS 15 or later.
+
+1. Download [Tavi Direct 1.0.2](https://github.com/LuisGil15/tavi/releases/download/v1.0.2/Tavi-1.0.2.dmg).
+2. Open the disk image and drag **Tavi** to **Applications**.
+3. Launch Tavi from Applications.
+
+Tavi Direct is signed with Developer ID and notarized by Apple. You should not need to disable Gatekeeper or remove the quarantine attribute.
+
+## Updates and integrity
+
+The [latest release](https://github.com/LuisGil15/tavi/releases/latest) contains the current signed macOS build and its release files. Tavi Direct 1.0.2 adds in-app updates for future direct releases; users upgrading from 1.0.1 need to install 1.0.2 manually once. The App Store version updates separately through Apple.
+
+## Privacy
+
+Tavi does not require an account. Workspace data stays on your device unless you enable private iCloud sync. Secret values are stored in Apple Keychain. Read the [privacy and security notes](https://github.com/LuisGil15/tavi-source/blob/main/docs/PRIVACY.md).
+
+## Links
+
+- [Latest Tavi Direct release](https://github.com/LuisGil15/tavi/releases/latest)
+- [App Store](https://apps.apple.com/mx/app/tavi/id6819794965)
+- [Source code](https://github.com/LuisGil15/tavi-source)
+- [Homebrew cask](https://github.com/LuisGil15/homebrew-tavi)
+- [Report an issue](https://github.com/LuisGil15/tavi/issues)
+
+<details>
+<summary>Release maintenance</summary>
+
+Publish signed, notarized macOS artifacts as GitHub Releases in this repository. Keep the versioned DMG, ZIP, checksum, and appcast feed consistent with the Homebrew cask and direct-update feed. Do not upload source archives or project files here.
+
+</details>
+
+---
+
+<p align="center">Made with care by Luis Gil.</p>
