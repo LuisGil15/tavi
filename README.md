@@ -21,9 +21,9 @@
 </p>
 
 <p align="center">
-  <a href="https://apps.apple.com/mx/app/tavi/id6819794965"><img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180"></a>
+  <a href="https://apps.apple.com/mx/app/tavi/id6819794965"><img src="assets/app-store-badge-black-en.svg" alt="Download on the App Store" width="180" height="60"></a>
   &nbsp;&nbsp;
-  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="https://img.shields.io/badge/Download_Tavi_Direct_for_macOS-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Download Tavi Direct for macOS"></a>
+  <a href="https://github.com/LuisGil15/tavi/releases/latest"><img src="assets/download-tavi-direct.svg" alt="Download Tavi Direct for macOS" width="180" height="60"></a>
 </p>
 
 Tavi is a native, local-first REST client for Mac and iPad. Organize APIs into workspaces and folders, send requests, and keep your environments and response history close at hand.
